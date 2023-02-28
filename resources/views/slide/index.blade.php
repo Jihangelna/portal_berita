@@ -12,7 +12,7 @@
             <div class="card-body shadow">
                 <div class="table-responsive-lg">
                     <table class="table table-bordered text-center">
-                        <thead class="text-white bg-primary text-uppercase">
+                        <thead class="text-white text-uppercase" style="background-color:#2e4d5b">
                             <tr>
                                 <th>No</th>
                                 <th>judul</th>

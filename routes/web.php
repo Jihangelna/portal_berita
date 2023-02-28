@@ -6,6 +6,7 @@ use App\Http\Controllers\ArtikelController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\SlideController;
 use App\Http\Controllers\BannerController;
+use App\Http\Controllers\KomentarController;
 
 
 
@@ -41,6 +42,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('kategori/hapus/{kategori}',[KategoriController::class,'destroy']);
     Route::resource('artikel', ArtikelController::class);
     Route::resource('slide', SlideController::class);
+    Route::resource('komentar', KomentarController::class);
 });
 
 Route::get('slide/hapus/{slide}',[SlideController::class,'destroy']);

@@ -52,7 +52,24 @@
                             </div>
                         </div>
                     </div>
+                     <div class="row">
+                        <div class="col-xl-8 col-lg-7">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Komentar</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <textarea name="body" class="form-control"></textarea>
+                                    </div>
+                                    <hr>
+                                   <a href="" class="btn btn-secondary">Kirim</a>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
                 </div>
+                
                 
                 <div class="col-lg-4 mt-5">
                     <div class="card mb-3" style="max-width: 23rem;">

@@ -4,7 +4,7 @@
 
 <div class="container">
     <div class="container-fluid">
-        <h4 class="font-weight-bold text-primary text-center text-uppercase">Data Kategori</h4>
+        <h4 class="font-weight-bold text-center text-uppercase">Data Kategori</h4>
         <a href="{{ route('kategori.create') }}"
             class="btn btn-primary font-weight-bold btn-sm mb-3 mr-3 text-uppercase ">
             Create Kategori</a>
@@ -17,7 +17,7 @@
             <div class="card-body shadow">
                 <div class="table-responsive-lg">
                     <table class="table table-bordered text-center">
-                        <thead class="text-white bg-primary text-uppercase">
+                        <thead class="text-white text-uppercase" style="background-color:#2e4d5b">
                             <tr>
                                 <th>No</th>
                                 <th>Nama Kategori</th>

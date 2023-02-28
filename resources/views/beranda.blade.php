@@ -10,8 +10,8 @@
     <link href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
 </head>
 
-<body style="background: linear-gradient(to right, #076585, rgb(218, 224, 255));">
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark fw-semibold" style="background-color:#076685cc">
+<body style="background: linear-gradient(to right, #6ba3a6fa, rgb(218, 244, 255));">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark fw-semibold" style="background-color:#2e4d5b">
         <div class="container">
             <a class="navbar-brand" href="">TIK HEALTH</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -22,7 +22,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="">Home</a>
+                        <a class="nav-link active" aria-current="page" href="beranda">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="konsultasi">Doctor</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -83,17 +86,17 @@
                 <div class="card h-100 w-100" style="width: auto">
                     <img src="{{ asset('storage/' . $row->gambar_artikel) }}" class="card-img-top" alt="gambar_artikel">
                     <div class="card-body">
+                        <button class="btn btn-light text-primary fw-bold" type="button">{{ $row->kategori->nama_kategori }}</button>
+                    
                         <h5 class="card-title">
-                            <a href=" {{ route('detail_artikel', $row->slug) }}" style="text-decoration: none;">
+                            <a href=" {{ route('detail_artikel', $row->slug) }}" style="color: black; text-decoration: none;">
                                 {{ $row->judul }}
                             </a>
                         </h5>
                             <p class="card-text">{{ Str::limit($row->body, 50) }}</p>
+                            <p class="card-text" style="font-size:12px; color: rgba(0, 0, 0, 0.416);">{{ $row->created_at }}</p>
                         
-                
-                        <button class="btn btn-light text-primary fw-bold" type="button">{{ $row->user->name }}</button>
-                        <button class="btn btn-light text-primary fw-bold" type="button">{{ $row->kategori->nama_kategori }}</button>
-                    </div>
+                        </div>
                 </div>
             </div>
             @endforeach

@@ -19,7 +19,7 @@
 
 </head>
 
-<body style="background: linear-gradient(to right, #076585, #fff);">
+<body style="background: linear-gradient(to right,  #6ba3a6fa, rgb(218, 244, 255));">
 
 
     <div class="container">
