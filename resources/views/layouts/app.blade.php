@@ -78,7 +78,7 @@
                         </a>
                         <a class="nav-link text-dark" href="" aria-expanded="true">
                             <i class="bi fas fa-copy"></i>
-                            <span>User</span>
+                            <span>Pasien</span>
                         </a>
                         <a class="nav-link text-dark" href="" aria-expanded="true">
                             <i class="bi fas fa-copy"></i>
