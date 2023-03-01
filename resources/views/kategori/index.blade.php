@@ -6,8 +6,8 @@
     <div class="container-fluid">
         <h4 class="font-weight-bold text-center text-uppercase">Data Kategori</h4>
         <a href="{{ route('kategori.create') }}"
-            class="btn btn-primary font-weight-bold btn-sm mb-3 mr-3 text-uppercase ">
-            Create Kategori</a>
+            class="btn btn-outline-dark font-weight-bold btn-sm mb-3 mr-3 text-uppercase ">
+            Create</a>
         <div class="card mb-4">
             @if (Session::has('Success'))
             <div class="alert alert-primary">
@@ -34,10 +34,10 @@
                                 <td>{{ $row->nama_kategori }}</td>
                                 <td>
                                     <a href="{{ url('kategori/'.$row->id.'/edit') }}"
-                                        class="btn btn-outline-primary btn-sm mr-1"><i
+                                        class="btn btn-outline-dark btn-sm mr-1"><i
                                             class="bi bi-pencil-fill"></i></a>
                                     <a href="{{ url('kategori/hapus/'. $row->id) }}"
-                                        class="btn btn-outline-primary btn-sm"><i class="bi bi-trash-fill"></i></a>
+                                        class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></a>
                                 </td>
                             </tr>
                             @endforeach

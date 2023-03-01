@@ -10,8 +10,8 @@
     <link href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
 </head>
 
-<body style="background: linear-gradient(to right, #076585, rgb(218, 224, 255));">
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark fw-semibold" style="background-color:#076685cc">
+<body style="background: linear-gradient(to right,#6ba3a6fa, rgb(218, 244, 255));">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark fw-semibold" style="background-color:#2e4d5b">
         <div class="container">
             <a class="navbar-brand" href="">TIK HEALTH</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
                     <li class="nav-item">
-                        <a href=""  class="nav-link active" aria-current="page">Home</a>
+                        <a href="{{ url('beranda') }}"  class="nav-link active" aria-current="page">Home</a>
                     </li>
 
                 </ul>
@@ -85,6 +85,10 @@
                 
                                         <a href=" {{ route('detail_artikel', $ktg->slug) }}" class="text-decoration-none" style="color: black;">
                                             {{ $ktg->judul }}</a>
+                                            {{-- <a>{{ $ktg->body }}</a> --}}
+                                            <br>
+                                            <a style="font-size:12px; color: rgba(0, 0, 0, 0.416);">{{ $ktg->created_at }} </a>
+                                            <hr>
                                    
                                  </div>
                                 </div>
@@ -97,7 +101,20 @@
                 </div>
             </div>
         </div>
-        
+        <br>
+    <footer class="footer mt-3 sticky-footer bg-white fw-bold text-secondary" style="background-color:#2e4d5b" >
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-info" >
+                <div class="container mt-4">
+                    <div class="copyright">
+                      &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
+                    </div>
+                  </div>             
+            </div>
+          </div>
+        </div>
+      </footer>
 </body>
 
 </html>

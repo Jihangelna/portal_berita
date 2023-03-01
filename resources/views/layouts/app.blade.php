@@ -42,7 +42,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center">
                 <div class="sidebar-brand-icon">
-                    <i class="fas fa-user-md"></i>
+                    <i class="fas fa-user-md" style="color:aliceblue"></i>
                 </div>
                 <div class="sidebar-brand-text mx-1 text-white">Tik Health</div>
 
@@ -63,29 +63,48 @@
             <hr class="sidebar-divider my-0">
 
             <li class="nav-item">
-                <a class="nav-link text-white" href="{{ route('admin.index') }}" aria-expanded="true">
-                    <i class="bi fas fa-copy"></i>
-                    <span>Admin</span>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo" style="color:aliceblue">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Data</span>
                 </a>
+                
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">DATA LOGIN:</h6>
+                        <a class="nav-link text-dark" href="{{ route('admin.index') }}" aria-expanded="true">
+                            <i class="bi fas fa-copy"></i>
+                            <span>Admin</span>
+                        </a>
+                        <a class="nav-link text-dark" href="" aria-expanded="true">
+                            <i class="bi fas fa-copy"></i>
+                            <span>User</span>
+                        </a>
+                        <a class="nav-link text-dark" href="" aria-expanded="true">
+                            <i class="bi fas fa-copy"></i>
+                            <span>Dokter</span>
+                        </a>
+                    </div>
+                </div>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link text-white" href="{{ route('kategori.index') }}" aria-expanded="true">
-                    <i class="bi fas fa-copy"></i>
+                    <i class="fas fa-copy"></i>
                     <span>Kategori</span>
                 </a>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link text-white" href="{{ route('artikel.index') }}" aria-expanded="true">
-                    <i class=""></i>
+                    <i class="bi bi-clipboard-check-fill"></i>
                     <span>Artikel</span>
                 </a>
             </li>
             
             <li class="nav-item">
                 <a class="nav-link text-white" href="{{ route('komentar.index') }}" aria-expanded="true">
-                    <i class=""></i>
+                    <i class="fas fa-comments fa-2x text-gray-300"></i>
                     <span>Komentar</span>
                 </a>
             </li>
@@ -97,6 +116,11 @@
                     <span>Slide Banner</span>
                 </a>
             </li>
+            <hr class="sidebar-divider my-0">
+            <br>
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
 
             <!-- Divider -->
         </ul>

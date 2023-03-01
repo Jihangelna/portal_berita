@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Artikel;
 use App\Models\Kategori;
 use App\Models\Slide;
+use App\Models\Dokter;
 use Illuminate\Http\Request;
 
 class BannerController extends Controller
@@ -95,5 +96,12 @@ class BannerController extends Controller
         $kategori = Artikel::where('kategori_id', '=', $artikel->kategori->id)->get();
 
         return view('detail_artikel', compact('kategori','artikel'));
+    }
+
+    public function dokter($slug)
+    {
+        $dokter = Dokter::where('slug', $slug)->first();
+    
+        return view('dokter', compact('dokter'));
     }
 }

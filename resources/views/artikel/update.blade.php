@@ -42,9 +42,9 @@
                             alt="{{ $artikel->gambar_artikel }}" width="350">
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button type="submit" class="btn btn-primary btn-sm font-weight-bold">save</button>
+                        <button type="submit" class="btn btn-outline-dark btn-sm font-weight-bold">save</button>
                         <a href="{{ route('artikel.index') }}"
-                            class="btn btn-primary font-weight-bold btn-sm">Kembali</a>
+                            class="btn btn-outline-dark font-weight-bold btn-sm">Kembali</a>
                     </div>
                 </form>
             </div>

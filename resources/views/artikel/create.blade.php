@@ -43,8 +43,8 @@
                       <input type="file" name="gambar_artikel" class="form-control">
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button type="submit" class="btn btn-primary btn-sm font-weight-bold rounded">save</button>
-                    <a href="{{ route('artikel.index') }}" class="btn btn-primary font-weight-bold btn-sm rounded">Kembali</a>
+                    <button type="submit" class="btn btn-outline-dark btn-sm font-weight-bold rounded">save</button>
+                    <a href="{{ route('artikel.index') }}" class="btn btn-outline-dark font-weight-bold btn-sm rounded">Kembali</a>
                     </div>
                   </form>
                 </div>

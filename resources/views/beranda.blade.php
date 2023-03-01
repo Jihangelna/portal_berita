@@ -25,7 +25,7 @@
                         <a class="nav-link active" aria-current="page" href="beranda">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="konsultasi">Doctor</a>
+                        <a class="nav-link active" aria-current="page" href="{{ url('dokter') }}">Doctor</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -111,14 +111,27 @@
             </div>
         </div>
     </div> --}}
-    <footer class="footer mt-3 sticky-footer bg-white fw-bold text-secondary">
+    {{-- <footer class="footer mt-3 sticky-footer bg-white fw-bold text-secondary">
         <div class="container">
             <div class="copyright text-center">
                 <span>Copyright &copy; 2022 | Take Health</span>
             </div>
         </div>
-    </footer>
-
+    </footer> --}}
+    <br>
+    <footer class="footer mt-3 sticky-footer bg-white fw-bold text-secondary" style="background-color:#2e4d5b" >
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-info" >
+                <div class="container mt-4">
+                    <div class="copyright">
+                      &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
+                    </div>
+                  </div>             
+            </div>
+          </div>
+        </div>
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
